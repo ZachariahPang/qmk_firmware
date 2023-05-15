@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+set -x
+
+
+qmk json2c keebio_iris_rev4_layout_mine.json -o keymap.c
+rm keymap.c.bak
+cat tap_hold.c >> keymap.c
+qmk compile -kb keebio/iris/rev4 -km zak
