@@ -19,7 +19,7 @@
       "KC_9",
       "KC_0",
       "MO(3)",
-      "OSM(MOD_HYPR)",
+      "KC_TAB",
       "KC_Q",
       "KC_W",
       "KC_E",
@@ -355,7 +355,7 @@
       "KC_TRNS"
     ],
     [
-      "RESET",
+      "QK_BOOT",
       "KC_TRNS",
       "KC_TRNS",
       "KC_TRNS",
