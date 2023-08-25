@@ -27,11 +27,11 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 
 
 
-bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LALT_T(KC_BSPC):
-            return false;
+            return TAPPING_TERM;
         default:
-            return true;
+            return QUICK_TAP_TERM;
     }
 }

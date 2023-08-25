@@ -20,11 +20,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define USE_I2C
 #define EE_HANDS
 
-
-#define IGNORE_MOD_TAP_INTERRUPT
-#undef TAPPING_TERM
+// https://precondition.github.io/home-row-mods#tap-hold-configuration-settings
 #define TAPPING_TERM 155
-#define TAPPING_FORCE_HOLD_PER_KEY
+#define IGNORE_MOD_TAP_INTERRUPT
+#define QUICK_TAP_TERM 0
+#define QUICK_TAP_TERM_PER_KEY
 
 // Mouse
 #define MK_3_SPEED

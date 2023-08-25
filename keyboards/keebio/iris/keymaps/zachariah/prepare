@@ -6,5 +6,6 @@ set -x
 
 qmk json2c keebio_iris_rev4_layout_mine.json -o keymap.c
 rm keymap.c.bak
-cat tap_hold.c >> keymap.c
+# cat tap_hold.c >> keymap.c
+cat quick_tap.c >> keymap.c
 qmk compile -kb keebio/iris/rev4 -km zachariah
